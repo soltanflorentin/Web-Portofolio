@@ -253,9 +253,6 @@ body{
   justify-self: center;
   color: white;
 }
-.colStanga{
-
-}
 .colStanga, .colDreapta{
   margin-top: 50px;
   font-size: 25px;
@@ -266,6 +263,24 @@ body{
   justify-self: end;
   margin-right: 10px;
 }
+.gitHub{
+  background: black;
+}
+.fa-facebook-square{
+  background: black;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.fa-paper-plane{
+  padding-left: 7px;
+}
+.fa-skype{
+  padding-left: 0;
+  margin-left: 0px;
+  background: black;
+}
+
+
 
 @media screen and (max-width: 1500px){
   .projectsList img{
@@ -279,6 +294,8 @@ body{
    justify-self: start; 
   }
 }
+
+
 @media screen and (max-width: 1000px){
   #allContent{
     margin: 20% 0 0 0;
@@ -300,10 +317,15 @@ body{
    margin-left: 20%;
   }
 }
+
+
 @media screen and (max-width: 710px){
    #allContent{
     grid-template-columns: 95%;
     margin-left: 4%;
+  }
+  .card{
+    margin-top: -35px
   }
   .headerContent{
     margin-top: 290px;
@@ -312,7 +334,10 @@ body{
    grid-template-columns: auto; 
   }
   #projects{
-    height: 1474px;
+    height: 1530px;
+  }
+  .pro{
+    border-bottom: 15px solid white;
   }
   .projectsList img{
     height: 80%;
@@ -329,11 +354,70 @@ body{
   .colStanga, .colDreapta{
     margin-left: 4%
   }
+  .colStanga p{
+    margin: 9px;
+    margin-top: -5px;
+  }
+  .colDreapta p{
+    margin: 0;
+    margin-left: 17px;
+    margin-top: -19px
+  }
   .wwwBottom, #contact i{
     margin: 5% auto;
   }
-  
-  
-  
-  
+  .wwwBottom{
+    margin-top: 80px;
+  }
+  .meniu{
+    border-bottom: 2px solid white;
+    align-items: center;
+  }
+  .meniu ul li a{
+    font-size: 14px;
+  }
+  .meniu ul li{
+    padding: 3px;
+  }
+   
+}
+
+
+@media screen and (max-width: 400px){
+   .meniu{
+      align-items: start;
+  }
+  .welcome{
+    grid-template-columns: auto;
+    margin-top: 60%;
+    margin-bottom: 400px;
+}
+  .spanHi{
+    font-size: 50px;
+  }
+  .welcomeIntro{
+    font-size: 30px;
+  }
+  .headerContent{
+    margin-top: 150px
+  }
+ .skillsList p{
+    font-size: 30px !important;
+   margin-left: 20px;
+  }
+  .headerContent p:first-child, #skills p:first-child, #projects p:first-child{
+  font-size: 30px;
+}
+  .headerContent p:first-child, #skills p, #projects p{
+    text-align: center;
+  }
+  .pro{
+    border-bottom: 15px solid white;
+  }
+  #projects{
+    height: 1517px;
+  }
+  .colStanga, .colDreapta{
+    margin-top: 30px;
+  }
 }
