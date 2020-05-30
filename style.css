@@ -424,7 +424,8 @@ body{
     color: white;
   }
   .headerContent{
-    margin-top: 150px
+    margin-top: 150px;
+    height: 430px;
   }
  .skillsList p{
     font-size: 30px !important;
