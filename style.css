@@ -1,9 +1,4 @@
-body{
-    background-image: url("poze/wallPaper8.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
+
 /*Meniu*/
 .meniu{
     background: black;
@@ -27,7 +22,7 @@ body{
   }
   .meniu ul li a{
     text-decoration: none;
-    color: gray;
+    color: white;
   }
 .meniu ul li a i{
   color: white;
@@ -36,11 +31,11 @@ body{
     border-right: none;
   }
   .meniu ul li:hover{
-    color: white;
+    color: grey;
     border-bottom: 2px solid white;
   }
   .meniu ul li a:hover{
-    color: white;
+    color: grey;
   }
 
 .welcome{
@@ -59,8 +54,6 @@ body{
   margin: 0;
 }
 .welcomeIntro{
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
   font-size: 50px;
   font-weight: bold;
 }
@@ -140,20 +133,15 @@ body{
     background: red;
     color:white;
   }
+.numeSiSocial a:last-child{
+  color: black;
+}
   
 
 #mainContent{
   margin-left: 20px;
 }
-#skills, #projects{
-  background: black;
-  color: white;
-  text-decoration: underline;
-}
-.headerContent{
-  background: black;
-  color: white;
-}
+
 .headerContent p:first-child{
   text-decoration: underline;
 }
@@ -167,6 +155,8 @@ body{
   height: 370px;
   margin-top: -13px;
   font-size: 22px;
+  background: black;
+  color: white;
 }
 
 #scrollAbout{
@@ -181,27 +171,38 @@ body{
   border-radius: 10px;
   box-shadow: 11px 11px 4px gray;
   margin-top: 90px;
-  height: 300px;
+  height: 325px;
+  background: black;
+  color: white;
 }
 #skillsScroll{
   margin-bottom: 50px;
 }
 .skillsList{
   text-align: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 .skillsList p{
     margin: 0;
-    margin-left: 50px;
+    xmargin-left: 50px;
     margin-top: 2%;
-    display: inline-block;
-    font-size: 50px;
+    font-size: 40px;
+}
+#skills p:first-child{
+  margin: 0;
+  text-decoration: underline;
+  margin-bottom: 15px;
 }
 
 #projects{
   border-radius: 10px;
   box-shadow: 11px 11px 4px gray;
-  height: 765px;
+  height: 769px;
   margin-top: 90px;
+  background: black;
+  color: white;
+  text-decoration: underline;
 }
 #projects p:first-child{
   margin: 0px;
@@ -295,6 +296,8 @@ body{
 
 
 
+
+
 @media screen and (max-width: 1500px){
   .projectsList img{
   width: 100%;
@@ -342,7 +345,27 @@ body{
   }
   .headerContent{
     margin-top: 290px;
+    height: 490px;
   }
+  
+  #skills{
+    height: 410px;
+  }
+  .skillsList{
+    grid-template-columns: auto;
+  }
+  .skillsList p{
+    font-size: 35px;
+    margin: 0;
+  }
+  #skills p:first-child{
+    font-size: 35px;
+    margin-bottom: 0;
+  }
+  .programmingLang{
+    margin-bottom: 50px;
+  }
+  
   .projectsList{
    grid-template-columns: auto; 
   }
@@ -425,7 +448,7 @@ body{
   }
   .headerContent{
     margin-top: 150px;
-    height: 430px;
+    height: 590px;
   }
  .skillsList p{
     font-size: 30px !important;
@@ -437,6 +460,7 @@ body{
   .headerContent p:first-child, #skills p, #projects p{
     text-align: center;
   }
+
   .pro{
     border-bottom: 15px solid white;
   }
