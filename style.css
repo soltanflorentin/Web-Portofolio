@@ -1,10 +1,11 @@
 :root{
+  --cardText:;
   --welcomeText : papyrus;
-  --aboutText: Courier;
-  --skillText: Courier;
-  --projectText: Gabriola;
-  --contactText: ;
-  --cardText:Gabriola;
+  --aboutText: Book Antiqua;
+  --skillText: Book Antiqua;
+  --projectText: Book Antiqua;
+  --contactText: Book Antiqua;
+  
 }
 /*Meniu*/
 .meniu{
