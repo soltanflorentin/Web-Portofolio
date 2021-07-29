@@ -1,11 +1,48 @@
 /**
-* Template Name: iPortfolio - v3.3.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+   * Message senderfunction
+   */
+ function sendMessage() {
+  document.getElementById("preloader").style.visibility = "show";
+  let name = document.getElementById("name");
+  let email = document.getElementById("email");
+  let mesaj = document.getElementById("idTextarea");
+  let subject = document.getElementById("subject");
+  if (name.value && email.value && mesaj.value && subject.value){
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "messagefromapps@gmail.com",
+        Password: "Message8989!",
+        To: "sflorentindev@gmail.com",
+        From: "messagefromapps@gmail.com",
+        Subject: `Test App Message -  ${subject.value}` ,
+        Body: `Name: ${name.value} ,   Email: ${email.value} ,    Message: ${mesaj.value}`  
+      })
+        .then(function (message) {
+          document.getElementById("preloader").style.visibility = "hidden";
+          $("#messageSentModal").modal("show");
+          name.value = "";
+          mesaj.value = "";
+          email.value = "";
+          subject.value = "";
+        });
+  }
+
+}
+
+
+function closeModal() {
+  $("#messageSentModal").modal("hide");
+}
+
+
+
 (function() {
   "use strict";
+  window.onload = function () {
+    document.getElementById("preloader").style.visibility = "hidden";
+}
+
+
 
   /**
    * Easy selector helper function
