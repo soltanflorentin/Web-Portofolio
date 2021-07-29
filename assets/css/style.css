@@ -1106,7 +1106,7 @@ section {
   z-index: 9999;
   overflow: hidden;
   background: #fff;
-  opacity: 0.65;
+  opacity: 1;
 }
 #preloader:before {
   content: "";
