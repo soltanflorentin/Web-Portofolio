@@ -8,7 +8,9 @@
   <title>Florentin Soltan</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  <!-- Font Awsome link -->
+  <!-- <link rel="stylesheet" href="./assets/vendor/fontAwsome/all.css">  -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -27,6 +29,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  
 </head>
 
 <body>
@@ -84,25 +87,25 @@
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/pozProfil1.jpg" class="img-fluid" alt="">
+            <img id="profilPoz" src="assets/img/pozProfil1.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Full-Stack Developer</h3>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>22 November 1978</span></li>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>22 November 1978</span></li> -->
                   <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <a id="webLinkHover" href="https://sflorentin.com" target="_blank" style="color:black;"><span>www.sflorentin.com</span></a></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>High Wycombe, UK</span></li>
                 </ul>
               </div>
-              <div class="col-lg-6">
+              <!-- <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>42</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sflorentindev@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+44 7586461900</span></li>
                 </ul>
-              </div>
+              </div> -->
             </div>
             <br>
             <h4>Motto: </h4>
@@ -122,8 +125,18 @@
           <h2>Skills</h2>
           <!-- <p></p> -->
         </div>
-
-        <div class="row skills-content">
+          <img class="skillsPhoto" src="./assets/img/skills/html.png" alt="html">&nbsp; &nbsp;
+          <img class="skillsPhoto" src="./assets/img/skills/CSS3.png" alt="css">&nbsp; &nbsp;
+          <img class="skillsPhoto" src="./assets/img/skills/js.png" alt="js">&nbsp; &nbsp;
+          <img class="skillsPhoto" src="./assets/img/skills/php.png" alt="php">&nbsp; &nbsp;
+          <img class="skillsPhoto" src="./assets/img/skills/python.png" alt="python">
+          <img class="skillsPhoto" src="./assets/img/skills/sql.png" alt="sql">
+          <img class="skillsPhoto" src="./assets/img/skills/react.png" alt="react">
+          <img class="skillsPhoto" src="./assets/img/skills/git.png" alt="git">
+          <img class="skillsPhoto" src="./assets/img/skills/bootstrap.png" alt="bootstrap">
+          <img class="skillsPhoto" src="./assets/img/skills/jquery.jpg" alt="jquery">
+        
+        <!-- <div class="row skills-content">
 
           <div class="col-lg-6" data-aos="fade-up">
             <div class="progress">
@@ -174,12 +187,12 @@
 
           </div>
 
-        </div>
-        <br>
+        </div> -->
+        <!-- <br>
         <div class="section-title">
           <h2>Tools</h2>
           <p><b>Bootstrap, JQuery, React, GitHub, APIs, Ajax</b></p>
-        </div>   
+        </div>    -->
         
       </div>
     </section><!-- End Skills Section -->
@@ -296,7 +309,7 @@
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">Games</li>
               <!-- <li data-filter=".filter-card">Card</li> -->
-              <li data-filter=".filter-web">Web-Apps</li>
+              <li data-filter=".filter-web">Web-Sites</li>
             </ul>
           </div>
         </div>
@@ -381,7 +394,7 @@
                 <p>9 Beech Close, High Wycombe, UK</p>
               </div>
 
-              <div class="email">
+              <!-- <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
                 <p>sflorentindev@gmail.com</p>
@@ -391,14 +404,14 @@
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
                 <p>+44 7586461900</p>
-              </div>
+              </div> -->
               <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCCaPWP0RgfBPqDdv4xXI6O68U7c5SsQe8&q=flackwell heat,uk" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
 
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form method="POST" onsubmit="return false" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -415,29 +428,52 @@
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea id="idTextarea" class="form-control" name="message" rows="10" required></textarea>
               </div>
-              <div class="my-3">
+              <!-- <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              </div> -->
+              <div class="text-center"><button type="submit" onclick="sendMessage()">Send Message</button></div>
             </form>
           </div>
         </div>
       </div>
       <br>
-      <div class="container">
+      <!-- <div class="container">
         <div class="copyright">
           &copy; Copyright 2021
           <img id="logoCopyright" src="./assets/img/Logo.png" alt="logo">
         </div>
-      </div>
+      </div> -->
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
+
+
+  <!-- Modal Message -->
+  <div id="messageSentModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Status Received</h5>
+          <button type="button" class="close" data-dismiss="modal" onclick="closeModal()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Your message has been sent. Thank you!</p>
+        </div>
+        <div class="modal-footer text-center">
+          <button type="button" class="btn btn-warning" data-dismiss="modal" onclick="closeModal()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
   <!-- ======= Footer ======= -->
   <!-- <footer id="footer">
     <div class="container">
@@ -450,8 +486,10 @@
   <!-- End  Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+  <div id="preloader"></div>
   <!-- Vendor JS Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
