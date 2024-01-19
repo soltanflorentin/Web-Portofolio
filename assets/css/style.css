@@ -9,8 +9,9 @@
 #profilPoz {
   height: 300px;
 }
-.skillsPhoto {
-  height: 80px
+
+.tailwind {
+  width: 100px;
 }
 /*--------------------------------------------------------------
 # General
@@ -411,8 +412,26 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
+.skillsPhoto {
+  height: 80px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+.skillsPhoto-github {
+  padding: 16px;
+}
+.skillsPhoto-php {
+  padding: 9px;
+}
+.skillsPhoto-sql {
+  padding: 9px;
+}
+.skills-container {
+  background-color: white;
+  padding: 20px;
+}
 .skills .progress {
   height: 60px;
   display: block;
@@ -817,9 +836,6 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact {
-  padding-bottom: 130px;
-}
 
 .contact .info {
   padding: 30px;
@@ -1037,6 +1053,14 @@ section {
   content: "/";
 }
 
+.profil-container {
+  margin-bottom: 32px !important;
+}
+#profilPoz {
+  border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 768px) {
   #profilPoz {
     height: auto;
@@ -1055,7 +1079,11 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
+        /* Footer styles */
+       
+        
+        
+/* #footer {
   padding: 15px;
   color: #f4f6fd;
   font-size: 14px;
@@ -1084,7 +1112,7 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
-}
+} */
 
 
 /* ---------PRELOADER------------------*/
