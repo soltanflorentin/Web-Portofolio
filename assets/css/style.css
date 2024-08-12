@@ -428,6 +428,12 @@ section {
 .skillsPhoto-sql {
   padding: 9px;
 }
+.skillsPhoto-livewire {
+  padding: 11px;
+}
+.skillsPhoto-filament {
+  padding: 19px;
+}
 .skills-container {
   background-color: white;
   padding: 20px;
